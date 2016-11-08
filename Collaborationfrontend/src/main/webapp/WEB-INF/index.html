@@ -1,0 +1,237 @@
+
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Blog</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+  body{
+    background:url('http://www.wallpaperup.com/uploads/wallpapers/2012/10/21/20181/cad2441dd3252cf53f12154412286ba0.jpg');
+    padding:50px;
+}
+label {
+  color: #666666;
+  font-weight: bold;
+}
+
+label.InvalidField {
+  color: red;
+}
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+
+}.navbar {
+    color: #FFFFFF;
+    background-color:#6bc6e1;
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar " role="navigation" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">BuDdY bLoG</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  
+            <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">Already have an account?</p></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+				<li>
+					 <div class="row">
+							<div class="col-md-12">
+								
+                                
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" name="mail_id" placeholder="Email address" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="password" class="form-control" name="password" id="exampleInputPassword2" placeholder="Password" required>
+                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+										</div>
+										<div class="form-group">
+											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+										</div>
+										<div class="checkbox">
+											 <label>
+											 <input type="checkbox"> keep me logged-in
+											 </label>
+										</div>
+								 </form>
+							</div>
+							<div class="bottom text-center">
+								New here ? <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="true" aria-controls="nav-collapse2"><i class="glyphicon glyphicon-user"></i>Join Us</a>
+							</div>
+					 </div>
+				</li>
+			</ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+  <div class="container">
+       <div class="row">
+     <div class="col-md-12">
+ <div class="col-md-4">
+
+
+    <div class="signup-form-container">
+     <div class="collapse collapse slide-down" id="nav-collapse2">
+         <!-- form start -->
+         <form method="post" role="form" id="register-form" autocomplete="off" action="register">
+         
+         <div class="form-header">
+          <h3 class="form-title" style="color:white;"> Register here</h3>
+                      
+        
+                      
+         </div>
+                  
+         <div class="form-body">
+         
+            <div class="alert alert-info" id="message" style="display:none;">
+              submitted
+              </div>
+                      
+            <div class="form-group">
+                   <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                   <input name="username" type="text" class="form-control" placeholder="Username">
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+                        
+                  <div class="form-group">
+                   <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                   <input name="email" type="text" class="form-control" placeholder="Email">
+                   </div> 
+                   <span class="help-block" id="error"></span>                     
+              </div>
+                        
+              
+                        
+                   <div class="form-group ">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="password" id="password" type="password" class="form-control" placeholder="Password">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                            
+                   <div class="form-group">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="cpassword" type="password" class="form-control" placeholder="Retype Password">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                  
+                    <div class="form-group">
+                        <div class="input-group"> 
+                 <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+    </div> 
+                     </div> 
+                        
+                        
+            </div>
+            
+            <div class="form-footer">
+                 <button type="submit" class="btn btn-info">
+                 <span class="glyphicon glyphicon-log-in"></span> Sign Me Up !
+                 </button>
+            </div>
+
+
+            </form>
+            
+           </div>
+
+ <div class="col-md-8"></div>
+ </div> </div> </div>
+  </div>
+  <script src="<c:url value="/resources/js/assets/jquery-1.11.2.min.js"/>"></script>
+    <script src="<c:url value="/resources/js/assets/jquery.validate.min.js"/>"></script>
+    <script src="<c:url value="/resources/js/assets/register.js"/>"></script>
+  
+    
+</body>
+</html>
